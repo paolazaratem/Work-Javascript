@@ -1,0 +1,32 @@
+<!-- 
+autor paolazaratem
+description: field when validate the value is umber between 1 to 10
+isNaN: method for validate if value is number
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myFunction(){
+    var x, text;
+    x = document.getElementById("num").value;
+    console.log("x " + x);
+    console.log(isNaN(x));
+    if(isNaN(x) || x <= 0 || x > 10)
+      text = "error";
+    else
+      text = "ok";
+
+    document.getElementById("first").innerHTML = text;
+  }
+  </script>
+</head>
+<body>
+  <h1>JavaScript can validate inputs</h1>
+  Please input a number between 1 and 10:
+  <input type="text" id="num" name="name" placeholder="only number">
+  <br>
+  <button type="button" name="button" onclick="myFunction()">Submit</button>
+  <p id="first"></p>
+</body>
+</html
