@@ -1,13 +1,8 @@
+<!--
+Description: change properties css of HTML element -->
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-  function myFunction() {
-      var x = document.getElementById("demo");
-      x.style.fontSize = "30px";
-      x.style.color = "blue";
-  }
-  </script>
 </head>
 <body>
 
@@ -16,6 +11,12 @@
 <p id="demo">JavaScript can change the style of an HTML element.</p>
 
 <button type="button" onclick="myFunction()">Click Me!</button>
-
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  x.style.fontSize = "30px";
+  x.style.color = "blue";
+}
+</script>
 </body>
 </html>
